@@ -11,16 +11,22 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
       playGame(WTP, startWtp, "wtp");
     }
     if (
-      (flags.broadcaster && command === "wtpauto") ||
-      (flags.mod && command === "wtpauto")
-    ) {
-      playGame(WTP, startWtp, "wtpauto");
-    }
-    if (
       (flags.broadcaster && command === "wtp2") ||
       (flags.mod && command === "wtp2")
     ) {
       playGame(WTP, startWtp, "wtp2");
+    }
+    if (
+      (flags.broadcaster && command === "wtp3") ||
+      (flags.mod && command === "wtp3")
+    ) {
+      playGame(WTP, startWtp, "wtp3");
+    }
+    if (
+      (flags.broadcaster && command === "wtp4") ||
+      (flags.mod && command === "wtp4")
+    ) {
+      playGame(WTP, startWtp, "wtp4");
     }
     if (
       (flags.broadcaster && command === "resetwtp") ||

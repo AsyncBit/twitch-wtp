@@ -85,16 +85,22 @@ function stopVid() {
 
 function showBlurredImage() {
   let dittoNumber = 0;
-  if(pokeNum == 132) {
+  if (pokeNum == 132) {
     if (command == "wtp") {
       dittoNumber = getRandomNumber(151);
     }
     if (command == "wtp2") {
-      dittoNumber = getRandomNumber(252);
+      dittoNumber = getRandomNumber(251);
+    }
+    if (command == "wtp3") {
+      dittoNumber = getRandomNumber(386);
+    }
+    if (command == "wtp4") {
+      dittoNumber = getRandomNumber(493);
     }
   }
   let blurredImage = document.createElement("img");
-  if(pokeNum == 132) {
+  if (pokeNum == 132) {
     blurredImage.src = "./wtp/assets/pokemons/" + dittoNumber + ".gif";
   } else {
     blurredImage.src = "./wtp/assets/pokemons/" + pokeNum + ".gif";
