@@ -1,0 +1,47 @@
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Peralta&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="./wtp/pokemon-info.js"></script>
+  <script src="./wtp/wtp.js"></script>
+  <link rel="stylesheet" href="./wtp/style.css" />
+
+  <script src="./wtproyal/grid.js"></script>
+  <script src="./wtproyal/wtproyal.js"></script>
+
+  <script src="./tbbt/tbbt-quotes.js"></script>
+  <script src="./tbbt/tbbt.js"></script>
+
+  <script src="./rpsls/rpsls.js"></script>
+
+  <script src="./scramble/scrambleWordList.js"></script>
+  <script src="./scramble/scramble.js"></script>
+
+  <script src="./comfy.min.js"></script>
+  <script src="./TwitchListener.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body id="body">
+  <div id="video-holder"></div>
+  <div id="text-holder" style="font-size: 36px"></div>
+  <audio id="dynamic-audio" src="" preload="auto"></audio>
+
+  <audio
+    id="who-that-pokemon-audio"
+    src="./wtp/assets/who-that-pokemon.mp3"
+    preload="auto"
+  ></audio>
+  <div id="ball" style="visibility: hidden">
+    <video id="ballVid" muted="" playsinline="" onended="stopVid()">
+      <source src="./wtp/assets/ball2_VP8.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div id="pokemonRoyalContainer"></div>
+</body>
