@@ -64,6 +64,12 @@ function startWtp(command) {
   if (command == "wtp2") {
     pokeNum = getRandomNumber(252);
   }
+  if (command == "wtp3") {
+    pokeNum = getRandomNumber(386);
+  }
+  if (command == "wtp4") {
+    pokeNum = getRandomNumber(493);
+  }
 
   currentName = pokemonList[pokeNum].name.toLowerCase().replaceAll(/\s/g, "");
   currentPokemon = pokemonList[pokeNum];

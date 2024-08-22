@@ -78,6 +78,24 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
       playGame(WTPROYAL, startWtpRoyal, "wtproyale");
     }
     if (
+      (flags.broadcaster && command === "wtproyale2") ||
+      (flags.mod && command === "wtproyale2")
+    ) {
+      playGame(WTPROYAL, startWtpRoyal, "wtproyale2");
+    }
+    if (
+      (flags.broadcaster && command === "wtproyale3") ||
+      (flags.mod && command === "wtproyale3")
+    ) {
+      playGame(WTPROYAL, startWtpRoyal, "wtproyale3");
+    }
+    if (
+      (flags.broadcaster && command === "wtproyale4") ||
+      (flags.mod && command === "wtproyale4")
+    ) {
+      playGame(WTPROYAL, startWtpRoyal, "wtproyale4");
+    }
+    if (
       (flags.broadcaster && command === "resetwtproyale") ||
       (flags.mod && command === "resetwtproyale")
     ) {

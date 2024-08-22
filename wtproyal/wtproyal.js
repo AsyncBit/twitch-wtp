@@ -16,6 +16,7 @@ class User {
 
 const timer = 60000;
 let royalActive = false;
+let maxNumber = 151;
 
 let activePokemons = [];
 let correctGuesses = [];
@@ -64,7 +65,7 @@ const guessRoyal = (guessedName, username) => {
 };
 
 const getNumber = () => {
-  let randNumber = Math.floor(Math.random() * 151) + 1;
+  let randNumber = Math.floor(Math.random() * maxNumber) + 1;
   var amountOfZeros = getZeros(randNumber);
   return amountOfZeros + randNumber;
 };
@@ -79,11 +80,25 @@ const getZeros = (number) => {
   }
 };
 
-function startWtpRoyal() {
+function startWtpRoyal(command) {
   royalActive = true;
   ComfyJS.Say(
     "THE ROYALE HAS STARTED!! There will be a grid of pokemons on screen soon, try to guess as many as you can within 60 seconds!"
   );
+
+  if (command == "wtproyale") {
+    maxNumber = 151;
+  }
+  if (command == "wtproyale2") {
+    maxNumber = 252;
+  }
+  if (command == "wtproyale3") {
+    maxNumber = 386;
+  }
+  if (command == "wtproyale4") {
+    maxNumber = 493;
+  }
+
   setTimeout(function () {
     startWtpRoyalGame();
   }, 5000);
